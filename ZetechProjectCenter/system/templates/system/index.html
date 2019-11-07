@@ -30,12 +30,12 @@
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
-      <h1 class="header center orange-text">Zetech University</h1>
+      <h1 class="header center blue-text">Zetech University</h1>
       <div class="row center">
-        <h5 class="header col s12 light">Home page form Materialize CSS</h5>
+        <h5 class="header col s12 black-text">Home page form Materialize CSS</h5>
       </div>
       <div class="row center">
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Log Into School System</a>
+        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light blue">Log Into School System</a>
       </div>
       <br><br>
 
@@ -84,8 +84,8 @@
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+          <h5 class="white-text">Course Work Project</h5>
+          <p class="grey-text text-lighten-4">Working towards excellency is our passion!</p>
 
 
         </div>
@@ -119,8 +119,10 @@
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
+  {% load static %}
+  <script src="{% static 'js/materialize.js' %}"></script>
+  {% load static %}
+  <script src="{% static 'js/init.js' %}"></script>
 
   </body>
 </html>
