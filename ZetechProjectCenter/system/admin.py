@@ -4,7 +4,12 @@ from .models import edAuditTrace, edStaff, edCollege, edFaculty, edDepartment, e
 
 # initial view for admin panel
 admin.site.register(edAuditTrace)
-admin.site.register(edStaff)
+# admin.site.register(edStaff)
+@admin.register(edStaff)
+class edStaffAdmin(admin.ModelAdmin):
+    list_display = ('stf_fname', 'stf_lname', 'stf_idnumber', 'stf_email')
+
+
 admin.site.register(edCollege)
 admin.site.register(edFaculty)
 admin.site.register(edDepartment)
