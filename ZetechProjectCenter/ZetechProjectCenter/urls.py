@@ -8,7 +8,4 @@ urlpatterns = [
     path('', include('system.urls'))
 ]
 
-# site authentications for user login/out
-urlpatterns += [
-    path('accounts/', include('django.contrib.auth.urls'))
-]
+
